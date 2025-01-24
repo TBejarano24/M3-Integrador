@@ -12,7 +12,7 @@ CREATE PROCEDURE InsertarPaciente
 	@telefono varchar(20),
 	@email varchar(30),
 	@fNacimiento date,
-	@observacion varchar(1000) = ''
+	@observacion varchar(1000) = 'Sin Observaciones'
 
 AS
 BEGIN
