@@ -101,86 +101,86 @@ cuales serán útiles para comprobar la funcionalidad de los procedimientos y la
 1- VALORES DE EJEMPLO (Paciente):
 
 `INSERT INTO Paciente (DNI, nombre, apellido, direccion, telefono, email, fNacimiento, observacion)
-VALUES ('46285108', 'Jorge', 'Mendoza', 'Calle 13 2163', '1145303381', 'jorge.mendoza@gmail.com', '1995-07-10', '')`
+VALUES ('46285108', 'Jorge', 'Mendoza', 'Calle 13 2163', '1145303381', 'jorge.mendoza@gmail.com', '1995-07-10', '')`\
 `INSERT INTO Paciente (DNI, nombre, apellido, direccion, telefono, email, fNacimiento, observacion)
-VALUES ('38105211', 'Rodrigo', 'Esquivel', 'Calle 20 1882', '22401333', 'rodrigo.esquivel@gmail.com', '2005-06-30', '')`
+VALUES ('38105211', 'Rodrigo', 'Esquivel', 'Calle 20 1882', '22401333', 'rodrigo.esquivel@gmail.com', '2005-06-30', '')`\
 `INSERT INTO Paciente (DNI, nombre, apellido, direccion, telefono, email, fNacimiento, observacion)
 VALUES ('50200139', 'Karina', 'Mendez', 'Calle 128 1095', '1140903881', 'karina.mendez@gmail.com', '1974-09-21', '')`
 
 2- VALORES DE EJEMPLO (Especialidad):
 
-`INSERT INTO Especialidad (especialidad) VALUES ('Neurología')`
-`INSERT INTO Especialidad (especialidad) VALUES ('Cardiología')`
-`INSERT INTO Especialidad (especialidad) VALUES ('Hematología')`
-`INSERT INTO Especialidad (especialidad) VALUES ('Dermatología')`
-`INSERT INTO Especialidad (especialidad) VALUES ('Gastroenterología')`
+`INSERT INTO Especialidad (especialidad) VALUES ('Neurología')`\
+`INSERT INTO Especialidad (especialidad) VALUES ('Cardiología')`\
+`INSERT INTO Especialidad (especialidad) VALUES ('Hematología')`\
+`INSERT INTO Especialidad (especialidad) VALUES ('Dermatología')`\
+`INSERT INTO Especialidad (especialidad) VALUES ('Gastroenterología')`\
 `INSERT INTO Especialidad (especialidad) VALUES ('Ginecología')`
 
 3- VALORES DE EJEMPLO (Medico):
 
 `INSERT INTO Medico (DNI, nombre, apellido)
-VALUES ('37816750', 'Patricia', 'Fernandez')`
+VALUES ('37816750', 'Patricia', 'Fernandez')`\
 `INSERT INTO Medico (DNI, nombre, apellido)
-VALUES ('41820319', 'Fernando', 'Mercado')`
+VALUES ('41820319', 'Fernando', 'Mercado')`\
 `INSERT INTO Medico (DNI, nombre, apellido)
 VALUES ('39312094', 'Carlos', 'García')`
 
 4- VALORES DE EJEMPLO (MedicoEspecialidad):
 
 `INSERT INTO MedicoEspecialidad (idMedico, idEspecialidad, descripcion)
-VALUES (1, 6, '')`
+VALUES (1, 6, '')`\
 `INSERT INTO MedicoEspecialidad (idMedico, idEspecialidad, descripcion)
-VALUES (2, 1, '')`
+VALUES (2, 1, '')`\
 `INSERT INTO MedicoEspecialidad (idMedico, idEspecialidad, descripcion)
 VALUES (3, 4, '')`
 
 5- VALORES DE EJEMPLO (TurnoEstado):
 
 `INSERT INTO TurnoEstado (idEstado, Descripcion)
-VALUES (0, 'Pendiente')`
+VALUES (0, 'Pendiente')`\
 `INSERT INTO TurnoEstado (idEstado, Descripcion)
-VALUES (1, 'Realizado')`
+VALUES (1, 'Realizado')`\
 `INSERT INTO TurnoEstado (idEstado, Descripcion)
-VALUES (2, 'Cancelado')`
+VALUES (2, 'Cancelado')`\
 `INSERT INTO TurnoEstado (idEstado, Descripcion)
-VALUES (3, 'Rechazado')`
+VALUES (3, 'Rechazado')`\
 `INSERT INTO TurnoEstado (idEstado, Descripcion)
-VALUES (4, 'Postergado')`
+VALUES (4, 'Postergado')`\
 `INSERT INTO TurnoEstado (idEstado, Descripcion)
-VALUES (5, 'Anulado')`
+VALUES (5, 'Anulado')`\
 `INSERT INTO TurnoEstado (idEstado, Descripcion)
 VALUES (6, 'Derivado')`
 
 6- VALORES DE EJEMPLO (Turno):
 
 `INSERT INTO Turno (fechaTurno, idEstado, observacion)
-VALUES ('2024-12-11', 0, '')`
+VALUES ('2024-12-11', 0, '')`\
 `INSERT INTO Turno (fechaTurno, idEstado, observacion)
-VALUES ('2024-12-20', 4, '')`
+VALUES ('2024-12-20', 4, '')`\
 `INSERT INTO Turno (fechaTurno, idEstado, observacion)
 VALUES ('2025-01-02', 1, '')`
 
 7- VALORES DE EJEMPLO (TurnoPaciente):
 
 `INSERT INTO TurnoPaciente (idTurno, idPaciente, idMedico)
-VALUES (1, 3, 3)`
+VALUES (1, 3, 3)`\
 `INSERT INTO TurnoPaciente (idTurno, idPaciente, idMedico)
-VALUES (2, 2, 1)`
+VALUES (2, 2, 1)`\
 `INSERT INTO TurnoPaciente (idTurno, idPaciente, idMedico)
 VALUES (3, 1, 2)`
 
 8- VALORES DE EJEMPLO (Concepto):
 
 `INSERT INTO Concepto (idConcepto, Descripcion)
-VALUES (0, 'Consulta Neurología')`
+VALUES (0, 'Consulta Neurología')`\
 `INSERT INTO Concepto (idConcepto, Descripcion)
-VALUES (1, 'Consulta Cardiología')`
+VALUES (1, 'Consulta Cardiología')`\
 `INSERT INTO Concepto (idConcepto, Descripcion)
-VALUES (2, 'Consulta Dermatología')`
+VALUES (2, 'Consulta Dermatología')`\
 `INSERT INTO Concepto (idConcepto, Descripcion)
-VALUES (3, 'Consulta Ginecología')`
+VALUES (3, 'Consulta Ginecología')`\
 `INSERT INTO Concepto (idConcepto, Descripcion)
-VALUES (4, 'Prácticas de Laboratorio')`
+VALUES (4, 'Prácticas de Laboratorio')`\
 `INSERT INTO Concepto (idConcepto, Descripcion)
 VALUES (5, 'Prácticas Avanzadas')`
 
