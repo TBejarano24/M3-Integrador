@@ -9,7 +9,7 @@ CREATE PROCEDURE InsertarTurno
 	@idEstado smallint,
 	@DNI_Paciente char(10),
 	@DNI_Medico char(10),
-	@observacion varchar(1000) = ''
+	@observacion varchar(1000) = 'Sin Observaciones'
 
 AS
 BEGIN
